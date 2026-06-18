@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Kumar — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">NK</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Initializing portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">NK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up"><span class="tag-dot"></span>Available for opportunities</div>
+      <h1 class="hero-title reveal-up">
+        Hi, I'm <span class="gradient-text">Nikhil Kumar</span>
+      </h1>
+      <div class="hero-subtitle reveal-up">
+        <span class="static-text">I build </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        BCA student & Frontend Developer crafting immersive web experiences. 
+        I turn ideas into pixel-perfect, responsive digital products with clean code and creative vision.
+      </p>
+      <div class="hero-btns reveal-up">
+        <a href="Nikhil_Kumar_CV.pdf" download class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact Me
+        </a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Live Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Months Exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Technologies</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="avatar-frame">
+        <div class="avatar-glow"></div>
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-circle">
+          <span class="avatar-initials">NK</span>
+        </div>
+        <div class="avatar-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Open to Work
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-left reveal-left">
+          <div class="about-card glass">
+            <div class="about-intro">
+              <p>I'm a passionate <strong>Frontend Developer</strong> and <strong>BCA student</strong> at IITM, Delhi. I specialize in building visually stunning, performant, and accessible web interfaces.</p>
+              <p>During my internship at <strong>Uptoskill</strong>, I led a team of developers and delivered live client projects — sharpening both my technical and leadership skills simultaneously.</p>
+              <p>My goal is to work at the intersection of <strong>design and engineering</strong>, crafting experiences that feel as good as they look.</p>
+            </div>
+            <div class="about-facts">
+              <div class="fact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>New Delhi, India</span>
+              </div>
+              <div class="fact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 7.18 19.79 19.79 0 01.21 2.52 2 2 0 012.18.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.3A16 16 0 0015.1 16.5l1.17-1.17a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <span>+91 98110 77646</span>
+              </div>
+              <div class="fact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>nikhilkumarr432@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal-right">
+          <div class="edu-card glass">
+            <h3 class="card-heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              Education
+            </h3>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-year">2023 – Present</span>
+                <h4>Bachelor of Computer Application</h4>
+                <p>IITM, New Delhi</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-year">2023</span>
+                <h4>Class XII — CBSE</h4>
+                <p>Bal Bhavan International School, Dwarka</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-year">2021</span>
+                <h4>Class X — CBSE</h4>
+                <p>Bal Bhavan International School, Dwarka</p>
+              </div>
+            </div>
+          </div>
+          <div class="goal-card glass">
+            <h3 class="card-heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              Career Goal
+            </h3>
+            <p>To become a <strong>full-stack developer</strong> at a forward-thinking company, building products that impact millions. Currently deepening my JavaScript foundation and exploring React & Node.js.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item reveal-up" data-delay="0">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M4 3l2.545 28.504L16 34l9.455-2.496L28 3H4zm20.373 8.38H11.624l.31 3.467h12.13l-.932 10.38L16 26.886l-7.13-1.66-.487-5.44h3.37l.248 2.773 3.999.925 4.004-.925.418-4.663H8.342L7.416 8.38h17.168l-.21 3z"/></svg>
+            </div>
+            <span class="skill-name">HTML5</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-item reveal-up" data-delay="100">
+          <div class="skill-header">
+            <div class="skill-icon css">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M4 3l2.545 28.504L15.988 34l9.455-2.496L28 3H4zm15.518 20.135l-3.518.825-3.523-.826-.239-2.685H9.87l.472 5.285 5.646 1.567 5.641-1.567.763-8.522H12.064l-.234-2.601h10.39l.237-2.635H8.97l.697 7.802h9.851l-.268 3z"/></svg>
+            </div>
+            <span class="skill-name">CSS3</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item reveal-up" data-delay="200">
+          <div class="skill-header">
+            <div class="skill-icon js">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M2 2h28v28H2V2zm14.652 21.5c.384.633.876 1.098 1.75 1.098.735 0 1.204-.368 1.204-.875 0-.607-.483-.823-1.294-1.177l-.443-.19c-1.284-.547-2.136-1.232-2.136-2.68 0-1.334 1.016-2.35 2.604-2.35 1.134 0 1.948.394 2.535 1.426l-1.387.89c-.305-.546-.634-.76-1.148-.76-.522 0-.854.332-.854.76 0 .533.332.748 1.1 1.08l.443.19c1.511.647 2.363 1.31 2.363 2.797 0 1.603-1.26 2.476-2.951 2.476-1.655 0-2.723-.787-3.245-1.818l1.46-.867zM11.4 23.4c.291.515.557.951 1.194.951.61 0 .99-.24.99-1.17v-6.33h1.8v6.35c0 1.927-1.13 2.8-2.776 2.8-1.49 0-2.354-.77-2.794-1.7L11.4 23.4z"/></svg>
+            </div>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-item reveal-up" data-delay="0">
+          <div class="skill-header">
+            <div class="skill-icon resp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><rect x="2" y="7" width="20" height="10" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            </div>
+            <span class="skill-name">Responsive Design</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item reveal-up" data-delay="100">
+          <div class="skill-header">
+            <div class="skill-icon git">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M31.414 14.586L17.414.586a2 2 0 00-2.828 0l-2.828 2.828 3.576 3.576a2.5 2.5 0 013.15 3.152l3.444 3.444a2.5 2.5 0 11-1.415 1.414l-3.212-3.212V19.5a2.5 2.5 0 11-2 0v-7.757l-4.29-4.29a2 2 0 00-2.828 2.828l14 14a2 2 0 002.828 0l5.414-5.414a2 2 0 000-2.281z"/></svg>
+            </div>
+            <span class="skill-name">Git & GitHub</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-item reveal-up" data-delay="200">
+          <div class="skill-header">
+            <div class="skill-icon sql">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <span class="skill-name">MySQL</span>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-item reveal-up learning" data-delay="100">
+          <div class="skill-header">
+            <div class="skill-icon learn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="skill-name">Python</span>
+            <span class="skill-pct">55%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          <span class="learning-tag">Growing</span>
+        </div>
+        <div class="skill-item reveal-up learning" data-delay="200">
+          <div class="skill-header">
+            <div class="skill-icon learn2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <span class="skill-name">C / C++</span>
+            <span class="skill-pct">60%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          <span class="learning-tag">Growing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 — Coffee Shop -->
+        4 — Coffee Shop -->
+        <div class="project-card glass reveal-up" data-delay="0">
+          <div class="project-img">
+            <div class="project-mockup coffee-mockup">
+              <div class="mockup-bar">
+                <span></span><span></span><span></span>
+                <div class="mockup-url">the-third-place-coffee-shop.vercel.app</div>
+              </div>
+              <div class="mockup-content coffee-content">
+                <div class="coffee-top">
+                  <div class="coffee-logo">☕ The Third Place</div>
+                  <div class="coffee-nav">
+                    <div class="coffee-nav-link"></div>
+                    <div class="coffee-nav-link"></div>
+                    <div class="coffee-nav-link"></div>
+                  </div>
+                </div>
+                <div class="coffee-hero">
+                  <div class="coffee-heading"></div>
+                  <div class="coffee-sub"></div>
+                  <div class="coffee-btn"></div>
+                </div>
+                <div class="coffee-cards">
+                  <div class="coffee-card"></div>
+                  <div class="coffee-card"></div>
+                  <div class="coffee-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag new">Live</span>
+            </div>
+            <h3 class="project-title">The Third Place Coffee Shop</h3>
+            <p class="project-desc">A warm, fully responsive coffee shop website with menu showcase, gallery section, and smooth UI. Built with pure HTML, CSS & JS — no frameworks. Deployed live on Vercel.</p>
+            <div class="project-links">
+              <a href="https://the-third-place-coffee-shop-agaw0kehz.vercel.app" target="_blank" class="proj-btn proj-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/Nikhilkumarr163/The-Third-Place-coffee-shop" target="_blank" class="proj-btn proj-gh">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 — Nike -->
+        1 -->
+        <div class="project-card glass reveal-up" data-delay="150">
+          <div class="project-img">
+            <div class="project-mockup nike-mockup">
+              <div class="mockup-bar">
+                <span></span><span></span><span></span>
+                <div class="mockup-url">nike-webpage-wheat.vercel.app</div>
+              </div>
+              <div class="mockup-content nike-content">
+                <div class="nike-logo">
+                  <svg viewBox="0 0 50 20" fill="currentColor"><path d="M 0,20 25,0 50,10 10,16 z"/></svg>
+                </div>
+                <div class="nike-tag">Just Do It.</div>
+                <div class="nike-cards">
+                  <div class="nike-card"></div>
+                  <div class="nike-card"></div>
+                  <div class="nike-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Nike Landing Page</h3>
+            <p class="project-desc">A fully responsive Nike e-commerce landing page with product cards, sticky navigation, CSS Flexbox layout, hover animations, and mobile-first media queries. Deployed on Vercel.</p>
+            <div class="project-links">
+              <a href="https://nike-webpage-wheat.vercel.app/" target="_blank" class="proj-btn proj-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/nikhilkumar432/nike-landing-page" target="_blank" class="proj-btn proj-gh">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 — Rotation -->
+        2 -->
+        <div class="project-card glass reveal-up" data-delay="300">
+          <div class="project-img">
+            <div class="project-mockup rotation-mockup">
+              <div class="mockup-bar">
+                <span></span><span></span><span></span>
+                <div class="mockup-url">rotated-page.vercel.app</div>
+              </div>
+              <div class="mockup-content rotation-content">
+                <div class="rotation-cubes">
+                  <div class="rcube rcube-1"></div>
+                  <div class="rcube rcube-2"></div>
+                  <div class="rcube rcube-3"></div>
+                </div>
+                <div class="rotation-label">3D Interactive Gallery</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS 3D</span><span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">3D Rotation Gallery</h3>
+            <p class="project-desc">Interactive image gallery with smooth 3D rotation using CSS transforms, <code>perspective</code>, and <code>transform-style: preserve-3d</code>. Optimized with AVIF images for blazing performance.</p>
+            <div class="project-links">
+              <a href="https://rotated-page.vercel.app/" target="_blank" class="proj-btn proj-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/nikhilkumar432/rotation-page" target="_blank" class="proj-btn proj-gh">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 — Portfolio -->
+        3 -->
+        <div class="project-card glass reveal-up" data-delay="450">
+          <div class="project-img">
+            <div class="project-mockup portfolio-mockup">
+              <div class="mockup-bar">
+                <span></span><span></span><span></span>
+                <div class="mockup-url">nikhilkumar.dev</div>
+              </div>
+              <div class="mockup-content portfolio-content">
+                <div class="port-nav">
+                  <div class="port-logo">NK.</div>
+                  <div class="port-links">
+                    <div class="port-link"></div>
+                    <div class="port-link"></div>
+                    <div class="port-link"></div>
+                  </div>
+                </div>
+                <div class="port-hero-mock">
+                  <div class="port-line long"></div>
+                  <div class="port-line medium"></div>
+                  <div class="port-btns">
+                    <div class="port-btn filled"></div>
+                    <div class="port-btn outline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag new">New</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p class="project-desc">This portfolio website — built from scratch with pure HTML, CSS, and JavaScript. Features glassmorphism design, typing animations, scroll reveals, and a fully responsive layout.</p>
+            <div class="project-links">
+              <a href="#home" class="proj-btn proj-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/nikhilkumar432" target="_blank" class="proj-btn proj-gh">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+            </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ RESUME ═══════════════════════════ -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Resume & <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="resume-download-wrap reveal-up">
+        <a href="Nikhil_Kumar_CV.pdf" download class="btn btn-primary btn-lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download Full Resume
+        </a>
+      </div>
+      <div class="timeline-grid">
+        <div class="timeline-col reveal-left">
+          <h3 class="timeline-heading">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            Experience
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content glass">
+                <div class="tl-meta">
+                  <span class="tl-date">Jan 2024 – Mar 2024</span>
+                  <span class="tl-badge">3 Months</span>
+                </div>
+                <h4>Frontend Developer Intern & Team Leader</h4>
+                <h5>Uptoskill</h5>
+                <ul class="tl-list">
+                  <li>Led a team of developers — assigned tasks, reviewed code, ensured on-time delivery</li>
+                  <li>Developed responsive web pages using HTML5, CSS3, and JavaScript for live client projects</li>
+                  <li>Fixed cross-browser bugs and improved frontend performance</li>
+                  <li>Mentored juniors on frontend best practices and Git workflow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-col reveal-right">
+          <h3 class="timeline-heading">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Education
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content glass">
+                <div class="tl-meta">
+                  <span class="tl-date">2023 – Present</span>
+                  <span class="tl-badge current">Current</span>
+                </div>
+                <h4>Bachelor of Computer Application</h4>
+                <h5>IITM, New Delhi</h5>
+                <p>Studying core CS concepts, data structures, databases, and software development.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content glass">
+                <div class="tl-meta">
+                  <span class="tl-date">2023</span>
+                  <span class="tl-badge">CBSE</span>
+                </div>
+                <h4>Class XII</h4>
+                <h5>Bal Bhavan International School, Dwarka</h5>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content glass">
+                <div class="tl-meta">
+                  <span class="tl-date">2021</span>
+                  <span class="tl-badge">CBSE</span>
+                </div>
+                <h4>Class X</h4>
+                <h5>Bal Bhavan International School, Dwarka</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">Whether you have a project, an opportunity, or just want to say hi — my inbox is always open. I'll try my best to get back to you!</p>
+          <div class="contact-details">
+            <a href="mailto:nikhilkumarr432@gmail.com" class="contact-item glass">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Email</span>
+                <span>nikhilkumarr432@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919811077646" class="contact-item glass">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 7.18 19.79 19.79 0 01.21 2.52 2 2 0 012.18.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.3A16 16 0 0015.1 16.5l1.17-1.17a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Phone</span>
+                <span>+91 98110 77646</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/nikhil-kumar-518778293" target="_blank" class="contact-item glass">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">LinkedIn</span>
+                <span>linkedin.com/in/nikhil-kumar</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form glass" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Rahul Sharma" autocomplete="off" />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="rahul@example.com" autocomplete="off" />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Collaboration" autocomplete="off" />
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">NK<span class="dot">.</span></a>
+          <p>Frontend Developer & BCA Student building immersive web experiences with clean code and creative vision.</p>
+          <div class="social-links">
+            <a href="https://github.com/nikhilkumar432" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/nikhil-kumar-518778293" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="mailto:nikhilkumarr432@gmail.com" class="social-icon" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="https://nike-webpage-wheat.vercel.app/" target="_blank">Nike Landing Page</a></li>
+            <li><a href="https://rotated-page.vercel.app/" target="_blank">3D Rotation Gallery</a></li>
+            <li><a href="#home">Portfolio Website</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nikhil Kumar. Crafted with <span class="heart">♥</span> in New Delhi.</p>
+        <p class="footer-tech">Built with HTML · CSS · JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
